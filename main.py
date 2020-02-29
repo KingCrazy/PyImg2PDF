@@ -80,7 +80,10 @@ except:
     print("An unknown error has occurred. Please contact the developers. ", sys.exc_info()[0])
     raise
 
+print()
 if pdf_created == True:
     print('PDF was successfully created at the path "%s"' % pdf_path)
 else:
     print('PDF was unable to be created. Make sure that there are valid images in the folder specified.')
+
+input("Press Enter to continue . . .")
