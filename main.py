@@ -19,7 +19,7 @@ input_path = input("Enter the path to the folder of images you wish to convert t
 
 # Ensures that the path they gave was valid. If not, it defaults to the current working directory.
 if os.path.exists(input_path):
-    file_path = os.path.abspath(path)
+    file_path = os.path.abspath(input_path)
 elif input_path == "":
     file_path = os.path.abspath(os.getcwd())
 else:
