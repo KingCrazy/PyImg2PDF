@@ -24,7 +24,7 @@ for f in os.listdir(file_path):
 
 if len(imgs) > 0:
     pdf_path = os.path.join(file_path,"converted_pdf.pdf")
-    imgs[0].save(pdf_path,save_all=True,append_images=imgs)
+    imgs[0].save(pdf_path,save_all=True,append_images=imgs[1:])
     print('PDF successfully saved to "%s".' % pdf_path)
 else:
     print('No valid image files found in directory "%s". Make sure files are of the format: .jpg, .gif, .png' % file_path)
