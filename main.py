@@ -2,12 +2,9 @@
 # (C) KingCrazy 2020
 # Dependencies:
 #   PIL
-#   comtypes
 
 from PIL import Image
 import os
-import glob
-import comtypes
 
 path = input("Enter the path to the folder of images you wish to convert to a PDF: ")
 
